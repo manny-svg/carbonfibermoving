@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carbon Fiber Moving — Dallas, TX</title>
+<meta name="description" content="Professional moving, house cleaning, junk removal & TV mounting in Dallas, TX. 9+ years. Licensed & insured. Call (469) 612-1436.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --red:#C8102E;
+  --red-dark:#9B0D22;
+  --red-xlight:#FFF5F6;
+  --red-light:#FFECEE;
+  --white:#FFFFFF;
+  --off:#F8F8F6;
+  --gray:#F0EFED;
+  --border:#E4E4E0;
+  --text:#141414;
+  --text2:#4A4A4A;
+  --text3:#888;
+  --shadow-sm:0 1px 4px rgba(0,0,0,0.07),0 4px 16px rgba(0,0,0,0.05);
+  --shadow-md:0 4px 12px rgba(0,0,0,0.08),0 12px 40px rgba(0,0,0,0.08);
+  --shadow-lg:0 8px 24px rgba(0,0,0,0.1),0 24px 64px rgba(0,0,0,0.1);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans',sans-serif;color:var(--text);background:var(--white);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;width:100%;height:100%;object-fit:cover}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:300;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 5%;background:rgba(255,255,255,0.96);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
+.logo{font-size:17px;font-weight:800;color:var(--text);text-decoration:none;letter-spacing:-0.02em}
+.logo span{color:var(--red)}
+.hero-logo-wrap{margin-bottom:24px;}
+.hero-logo-img{height:120px;margin-bottom:0;width:auto;object-fit:contain;margin-bottom:24px;display:block;mix-blend-mode:multiply}
+.logo-img-link{display:flex;align-items:center;text-decoration:none;flex-shrink:0}
+.nav-logo-img{height:50px;width:auto;object-fit:contain;display:block;mix-blend-mode:multiply}
+.nav-links{display:flex;gap:28px;list-style:none;align-items:center}
+.nav-links a{color:var(--text2);text-decoration:none;font-size:14px;font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--text)}
+.nav-pill{background:var(--red)!important;color:#fff!important;padding:9px 20px;border-radius:100px;font-weight:700!important;font-size:13px!important;transition:background .2s!important}
+.nav-pill:hover{background:var(--red-dark)!important}
+@media(max-width:768px){.nav-links{display:none}}
+
+/* ── TICKER ── */
+.ticker-wrap{background:var(--red);overflow:hidden;height:38px;display:flex;align-items:center;margin-top:68px}
+.ticker-track{display:flex;white-space:nowrap;animation:tick 28s linear infinite}
+.tick-item{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,0.9);padding:0 28px}
+.tick-sep{color:rgba(255,255,255,0.35);padding:0 4px;font-size:11px}
+@keyframes tick{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ── HERO ── */
+#hero{display:grid;grid-template-columns:1fr 1fr;min-height:calc(100vh - 106px);background:var(--white)}
+.hero-left{display:flex;flex-direction:column;justify-content:center;padding:72px 5% 72px 6%;position:relative}
+.hero-left::after{content:'';position:absolute;right:0;top:15%;bottom:15%;width:1px;background:var(--border)}
+@keyframes ping{0%,100%{opacity:1}50%{opacity:.4}}
+img{color:transparent}
+img::before{content:'';display:none}
+h1{font-size:clamp(44px,5.5vw,72px);font-weight:800;line-height:1.05;letter-spacing:-0.03em;color:var(--text);margin-bottom:22px}
+h1 em{font-style:normal;color:var(--red)}
+.hero-sub{font-size:17px;color:var(--text2);line-height:1.75;max-width:440px;margin-bottom:36px}
+.hero-sub strong{color:var(--text);font-weight:600}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:52px}
+.btn-red{display:inline-flex;align-items:center;gap:8px;background:var(--red);color:#fff;font-size:15px;font-weight:700;padding:14px 26px;border-radius:100px;text-decoration:none;border:none;cursor:pointer;transition:background .2s,transform .15s;letter-spacing:-.01em}
+.btn-red:hover{background:var(--red-dark);transform:translateY(-1px)}
+.btn-red svg,.btn-outline svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2.5;transition:transform .2s}
+.btn-red:hover svg,.btn-outline:hover svg{transform:translateX(3px)}
+.btn-outline{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--text);font-size:15px;font-weight:600;padding:14px 26px;border-radius:100px;text-decoration:none;border:1.5px solid var(--border);transition:border-color .2s,transform .15s}
+.btn-outline:hover{border-color:#aaa;transform:translateY(-1px)}
+.hero-stats{display:flex;gap:36px}
+.stat-item{}
+.stat-n{font-size:36px;font-weight:800;color:var(--text);letter-spacing:-0.03em;line-height:1}
+.stat-n span{color:var(--red)}
+.stat-l{font-size:12px;color:var(--text3);font-weight:500;margin-top:3px;text-transform:uppercase;letter-spacing:.05em}
+
+.hero-right{position:relative;overflow:hidden;background:linear-gradient(135deg,#1c1c1c 0%,#2e2020 100%)}
+.hero-img-wrap{position:absolute;inset:0}
+.hero-img-wrap img{object-position:center}
+.hero-right-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(204,26,40,0.08) 0%,transparent 60%)}
+.hero-tag{position:absolute;bottom:32px;left:32px;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);border-radius:12px;padding:16px 20px;box-shadow:var(--shadow-md)}
+.hero-tag-stars{display:flex;gap:2px;margin-bottom:4px}
+.hero-tag-star{width:13px;height:13px;fill:#F5A623}
+.hero-tag-text{font-size:13px;font-weight:700;color:var(--text)}
+.hero-tag-sub{font-size:11px;color:var(--text3);margin-top:1px}
+
+@media(max-width:900px){
+  #hero{grid-template-columns:1fr;min-height:auto}
+  .hero-right{height:300px;order:-1}
+  .hero-left{padding:40px 5%;text-align:center}
+  .hero-left::after{display:none}
+  .hero-badge,.hero-btns,.hero-stats{margin-left:auto;margin-right:auto}
+  .hero-btns,.hero-stats{justify-content:center}
+  .hero-sub{margin:0 auto 36px}
+}
+
+/* ── SHARED SECTION ── */
+.sec{padding:96px 6%}
+.sec-alt{background:var(--off)}
+.sec-gray{background:var(--gray)}
+.sec-red{background:var(--red)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--red);margin-bottom:14px}
+.eyebrow::before{content:'';width:20px;height:2px;background:var(--red);border-radius:2px}
+h2{font-size:clamp(34px,4vw,52px);font-weight:800;letter-spacing:-0.03em;color:var(--text);line-height:1.08;margin-bottom:14px}
+h2.light{color:#fff}
+.sub{font-size:17px;color:var(--text2);line-height:1.75;max-width:480px;margin-bottom:56px}
+.sub.light{color:rgba(255,255,255,.75)}
+
+/* ── SERVICES ── */
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:24px}
+.svc-card{background:var(--white);border-radius:16px;overflow:hidden;box-shadow:var(--shadow-sm);transition:transform .25s,box-shadow .25s;cursor:default}
+.svc-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.svc-photo{height:210px;position:relative;overflow:hidden;background:linear-gradient(135deg,#1a1a1a 0%,#2d2d2d 100%)}
+.svc-photo img{transition:transform .4s ease}
+.svc-card:hover .svc-photo img{transform:scale(1.04)}
+.svc-photo-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,rgba(0,0,0,0.45))}
+.svc-num{position:absolute;top:16px;left:16px;background:var(--red);color:#fff;font-size:11px;font-weight:800;letter-spacing:.08em;padding:4px 10px;border-radius:100px;text-transform:uppercase}
+.svc-body{padding:24px 24px 28px}
+.svc-body h3{font-size:20px;font-weight:800;color:var(--text);margin-bottom:8px;letter-spacing:-.02em}
+.svc-body p{font-size:14px;color:var(--text2);line-height:1.7}
+.svc-link{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:var(--red);text-decoration:none;margin-top:16px;transition:gap .2s}
+.svc-link:hover{gap:10px}
+.svc-link svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:2.5}
+
+/* ── PROCESS ── */
+.process-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0;position:relative}
+.process-row::after{content:'';position:absolute;top:30px;left:12%;right:12%;height:1px;background:var(--border);z-index:0}
+.process-step{text-align:center;padding:0 24px;position:relative;z-index:1}
+.p-circle{width:60px;height:60px;border-radius:50%;background:var(--white);border:2px solid var(--border);display:flex;align-items:center;justify-content:center;margin:0 auto 22px;transition:border-color .25s,background .25s}
+.process-step:hover .p-circle{border-color:var(--red);background:var(--red-xlight)}
+.p-num{font-size:20px;font-weight:800;color:var(--red)}
+.process-step h3{font-size:16px;font-weight:700;color:var(--text);margin-bottom:8px}
+.process-step p{font-size:14px;color:var(--text2);line-height:1.65}
+
+/* ── WHY US ── */
+.why-layout{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+@media(max-width:900px){.why-layout{grid-template-columns:1fr;gap:48px}}
+.trust-band{display:flex;gap:40px;flex-wrap:wrap;margin-bottom:40px}
+.trust-n{font-size:44px;font-weight:800;letter-spacing:-.03em;color:var(--text);line-height:1}
+.trust-n sup{font-size:22px;color:var(--red);vertical-align:super}
+.trust-lbl{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--text3);margin-top:4px}
+.trust-div{width:1px;background:var(--border);align-self:stretch;margin:4px 0}
+
+.why-right-photo{border-radius:20px;overflow:hidden;height:380px;margin-bottom:24px;position:relative;background:linear-gradient(135deg,#1a1a1a 0%,#2a1a1a 100%)}
+.why-badge{position:absolute;bottom:20px;right:20px;background:#fff;border-radius:10px;padding:14px 18px;box-shadow:var(--shadow-md)}
+.why-badge-top{font-size:13px;font-weight:800;color:var(--text);margin-bottom:2px}
+.why-badge-sub{font-size:12px;color:var(--text3)}
+
+.checklist{display:flex;flex-direction:column;gap:0}
+.check-item{display:flex;align-items:flex-start;gap:14px;padding:20px 0;border-bottom:1px solid var(--border)}
+.check-item:last-child{border-bottom:none}
+.check-icon{width:32px;height:32px;min-width:32px;border-radius:50%;background:var(--red-xlight);display:flex;align-items:center;justify-content:center;margin-top:1px}
+.check-icon svg{width:14px;height:14px;stroke:var(--red);fill:none;stroke-width:3}
+.check-item h4{font-size:15px;font-weight:700;color:var(--text);margin-bottom:3px}
+.check-item p{font-size:14px;color:var(--text2);line-height:1.6}
+
+/* ── REVIEWS ── */
+.reviews-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.review-card{background:var(--white);border-radius:16px;padding:32px;box-shadow:var(--shadow-sm);transition:transform .2s,box-shadow .2s;position:relative}
+.review-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md)}
+.r-stars{display:flex;gap:3px;margin-bottom:18px}
+.r-star{width:15px;height:15px;fill:#F5A623}
+.r-text{font-size:15px;color:var(--text2);line-height:1.75;margin-bottom:24px}
+.r-divider{width:32px;height:2px;background:var(--red);border-radius:2px;margin-bottom:18px}
+.r-name{font-size:14px;font-weight:700;color:var(--text)}
+.r-loc{font-size:12px;color:var(--text3);margin-top:2px}
+.r-quote{position:absolute;top:24px;right:24px;font-size:64px;font-weight:800;color:rgba(204,26,40,0.07);line-height:1;font-family:Georgia,serif;pointer-events:none}
+
+/* ── CTA BANNER ── */
+#cta{padding:100px 6%;background:var(--red);position:relative;overflow:hidden;text-align:center}
+.cta-ghost{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:clamp(60px,12vw,140px);font-weight:800;color:rgba(255,255,255,0.06);text-transform:uppercase;letter-spacing:0.04em;white-space:nowrap;pointer-events:none;user-select:none}
+.cta-inner{position:relative;z-index:1;max-width:600px;margin:0 auto}
+.cta-inner h2{font-size:clamp(38px,5vw,62px);color:#fff;margin-bottom:14px}
+.cta-inner p{font-size:18px;color:rgba(255,255,255,.75);margin-bottom:40px}
+.btn-white{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--red);font-size:15px;font-weight:700;padding:15px 30px;border-radius:100px;text-decoration:none;transition:background .2s,transform .15s;margin:0 8px}
+.btn-white:hover{background:#f5e8e9;transform:translateY(-1px)}
+.btn-white svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2.5;transition:transform .2s}
+.btn-white:hover svg{transform:translateX(3px)}
+.btn-white-outline{display:inline-flex;align-items:center;gap:8px;background:transparent;color:#fff;font-size:15px;font-weight:600;padding:15px 28px;border-radius:100px;text-decoration:none;border:1.5px solid rgba(255,255,255,.4);transition:border-color .2s,transform .15s;margin:0 8px}
+.btn-white-outline:hover{border-color:#fff;transform:translateY(-1px)}
+
+/* ── CONTACT ── */
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:80px;align-items:start}
+@media(max-width:900px){.contact-grid{grid-template-columns:1fr;gap:48px}}
+.contact-info h2{margin-bottom:10px}
+.contact-info .sub{margin-bottom:36px}
+.c-detail{display:flex;align-items:center;gap:12px;font-size:15px;color:var(--text2);margin-bottom:16px;text-decoration:none;transition:color .2s}
+.c-detail:hover{color:var(--text)}
+.c-icon{width:40px;height:40px;min-width:40px;border-radius:10px;background:var(--red-xlight);display:flex;align-items:center;justify-content:center}
+.c-icon svg{width:17px;height:17px;stroke:var(--red);fill:none;stroke-width:1.8}
+
+form{display:flex;flex-direction:column;gap:14px}
+form input,form select,form textarea{width:100%;font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;color:var(--text);background:var(--white);border:1.5px solid var(--border);border-radius:10px;padding:13px 16px;outline:none;transition:border-color .2s;-webkit-appearance:none}
+form input::placeholder,form textarea::placeholder{color:var(--text3)}
+form input:focus,form select:focus,form textarea:focus{border-color:var(--red)}
+form select{color:var(--text2);cursor:pointer}
+form select.has-val{color:var(--text)}
+form select option{color:var(--text);background:#fff}
+form textarea{resize:vertical;min-height:100px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:560px){.form-row{grid-template-columns:1fr}}
+.form-btn{width:100%;font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:700;background:var(--red);color:#fff;border:none;border-radius:100px;padding:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:background .2s,transform .15s}
+.form-btn:hover{background:var(--red-dark);transform:translateY(-1px)}
+.form-btn svg{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:2.5}
+
+/* ── FOOTER ── */
+footer{background:var(--off);border-top:1px solid var(--border);padding:32px 6%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px}
+.ft-logo{font-size:15px;font-weight:800;color:var(--text);letter-spacing:-.02em}
+.ft-logo span{color:var(--red)}
+.ft-links{display:flex;gap:24px}
+.ft-links a{font-size:13px;color:var(--text3);text-decoration:none;transition:color .2s}
+.ft-links a:hover{color:var(--text)}
+.ft-copy{font-size:13px;color:var(--text3)}
+
+/* ── REVEAL ── */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .55s ease,transform .55s ease}
+.reveal.up{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="logo-img-link"><img src="images/logo.jpg" alt="Carbon Fiber Moving" class="nav-logo-img"></a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact" class="nav-pill">Free Quote</a></li>
+  </ul>
+</nav>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <span class="tick-item">Licensed &amp; Insured</span><span class="tick-sep">·</span>
+    <span class="tick-item">9+ Years in Dallas</span><span class="tick-sep">·</span>
+    <span class="tick-item">Flat-Rate Pricing — No Hidden Fees</span><span class="tick-sep">·</span>
+    <span class="tick-item">5★ Google Rated</span><span class="tick-sep">·</span>
+    <span class="tick-item">Same-Day Quotes</span><span class="tick-sep">·</span>
+    <span class="tick-item">Serving Dallas · Plano · Irving · Frisco</span><span class="tick-sep">·</span>
+    <span class="tick-item">Licensed &amp; Insured</span><span class="tick-sep">·</span>
+    <span class="tick-item">9+ Years in Dallas</span><span class="tick-sep">·</span>
+    <span class="tick-item">Flat-Rate Pricing — No Hidden Fees</span><span class="tick-sep">·</span>
+    <span class="tick-item">5★ Google Rated</span><span class="tick-sep">·</span>
+    <span class="tick-item">Same-Day Quotes</span><span class="tick-sep">·</span>
+    <span class="tick-item">Serving Dallas · Plano · Irving · Frisco</span><span class="tick-sep">·</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-left">
+    <div class="hero-logo-wrap"><img src="images/logo.jpg" alt="Carbon Fiber Moving" class="hero-logo-img"></div>
+    <h1>Fast. Careful.<br><em>Done right.</em></h1>
+    <p class="hero-sub">Dallas's trusted crew for <strong>moving, cleaning, junk removal &amp; TV mounting</strong> since 2019. One call, everything handled.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-red">
+        Get a Free Quote
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="tel:+14696121436" class="btn-outline">(469) 612-1436</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-n"><span class="count" data-to="9">0</span><span>+</span></div>
+        <div class="stat-l">Years Experience</div>
+      </div>
+      <div style="width:1px;background:var(--border);margin:4px 0 0"></div>
+      <div class="stat-item">
+        <div class="stat-n"><span class="count" data-to="5">0</span><span style="color:var(--red)">★</span></div>
+        <div class="stat-l">Google Rating</div>
+      </div>
+      <div style="width:1px;background:var(--border);margin:4px 0 0"></div>
+      <div class="stat-item">
+        <div class="stat-n"><span class="count" data-to="4">0</span></div>
+        <div class="stat-l">Services Offered</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-img-wrap">
+      <img src="images/hero.jpg" alt="Carbon Fiber Moving — Dallas" style="object-position:center 30%" loading="eager">
+    </div>
+    <div class="hero-right-overlay"></div>
+    <div class="hero-tag">
+      <div class="hero-tag-stars">
+        <svg class="hero-tag-star" viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg>
+        <svg class="hero-tag-star" viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg>
+        <svg class="hero-tag-star" viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg>
+        <svg class="hero-tag-star" viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg>
+        <svg class="hero-tag-star" viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg>
+      </div>
+      <div class="hero-tag-text">"Seamless, stress-free move."</div>
+      <div class="hero-tag-sub">Sarah M. — Dallas, TX</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="sec sec-alt">
+  <div class="eyebrow">What We Do</div>
+  <h2>One crew.<br>Everything handled.</h2>
+  <p class="sub">We do it all — so you only have to make one call.</p>
+  <div class="services-grid">
+
+    <div class="svc-card reveal">
+      <div class="svc-photo">
+        <img src="images/moving.jpg" alt="Carbon Fiber Moving crew" style="object-position:center center" style="object-position:center center">
+        <div class="svc-photo-overlay"></div>
+        <div class="svc-num">Moving</div>
+      </div>
+      <div class="svc-body">
+        <h3>Moving Services</h3>
+        <p>Local or long distance. We wrap every piece of furniture, protect your floors, and handle it like it's our own stuff.</p>
+        <a href="#contact" class="svc-link">Book a move <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+
+    <div class="svc-card reveal d1">
+      <div class="svc-photo">
+        <img src="images/cleaning.jpg" alt="Move-in ready home" style="object-position:center 40%">
+        <div class="svc-photo-overlay"></div>
+        <div class="svc-num">Cleaning</div>
+      </div>
+      <div class="svc-body">
+        <h3>House Cleaning</h3>
+        <p>Move-in or move-out ready. We deep clean top to bottom so you can focus on settling in, not scrubbing.</p>
+        <a href="#contact" class="svc-link">Schedule a clean <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+
+    <div class="svc-card reveal d2">
+      <div class="svc-photo">
+        <img src="images/packed.jpg" alt="Packed moving truck" style="object-position:center 20%">
+        <div class="svc-photo-overlay"></div>
+        <div class="svc-num">Junk Removal</div>
+      </div>
+      <div class="svc-body">
+        <h3>Junk Removal</h3>
+        <p>Old furniture, appliances, clutter — we haul it out fast and responsibly. You point, we lift.</p>
+        <a href="#contact" class="svc-link">Clear it out <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+
+    <div class="svc-card reveal d3">
+      <div class="svc-photo">
+        <img src="images/truck.jpg" alt="Carbon Fiber Moving truck" style="object-position:center 40%">
+        <div class="svc-photo-overlay"></div>
+        <div class="svc-num">TV Mounting</div>
+      </div>
+      <div class="svc-body">
+        <h3>TV Mounting</h3>
+        <p>Perfectly level, anchored into studs, cables managed. We mount it exactly where you want it and clean up on the way out.</p>
+        <a href="#contact" class="svc-link">Get it mounted <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" class="sec">
+  <div style="text-align:center;margin-bottom:64px">
+    <div class="eyebrow" style="justify-content:center">How It Works</div>
+    <h2>Simple as 1, 2, 3</h2>
+    <p class="sub" style="margin:0 auto;text-align:center">No paperwork marathons. No runaround. Just a smooth process from first call to finished job.</p>
+  </div>
+  <div class="process-row">
+    <div class="process-step reveal">
+      <div class="p-circle"><span class="p-num">1</span></div>
+      <h3>Get a Quote</h3>
+      <p>Tell us about your job. We send a flat-rate estimate — fast, no vague ranges.</p>
+    </div>
+    <div class="process-step reveal d1">
+      <div class="p-circle"><span class="p-num">2</span></div>
+      <h3>Pick a Date</h3>
+      <p>Choose a time that works. We're flexible and we show up when we say we will.</p>
+    </div>
+    <div class="process-step reveal d2">
+      <div class="p-circle"><span class="p-num">3</span></div>
+      <h3>We Handle It</h3>
+      <p>Our crew takes it from there. Fast, careful, professional. You just open the door.</p>
+    </div>
+    <div class="process-step reveal d3">
+      <div class="p-circle"><span class="p-num">4</span></div>
+      <h3>You're Done</h3>
+      <p>Move finished. Pay the exact flat rate you were quoted. That's it.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why" class="sec sec-alt">
+  <div class="why-layout">
+    <div>
+      <div class="eyebrow">Why Carbon Fiber</div>
+      <h2>The name you'll send to your friends</h2>
+      <p class="sub" style="margin-bottom:32px">We've built this company on referrals, not ads. Here's what keeps people coming back.</p>
+      <div class="trust-band">
+        <div>
+          <div class="trust-n">9<sup>+</sup></div>
+          <div class="trust-lbl">Years in DFW</div>
+        </div>
+        <div class="trust-div"></div>
+        <div>
+          <div class="trust-n">5<sup style="color:var(--red)">★</sup></div>
+          <div class="trust-lbl">Google Rating</div>
+        </div>
+        <div class="trust-div"></div>
+        <div>
+          <div class="trust-n">100<sup style="color:var(--red)">%</sup></div>
+          <div class="trust-lbl">Insured</div>
+        </div>
+      </div>
+      <a href="#contact" class="btn-red" style="margin-top:8px">
+        Get Started
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+    <div>
+      <div class="why-right-photo reveal">
+        <img src="images/moving.jpg" alt="Carbon Fiber Moving crew" style="object-position:center center">
+        <div class="why-badge">
+          <div class="why-badge-top">✓ Licensed &amp; Insured</div>
+          <div class="why-badge-sub">Background-checked crew</div>
+        </div>
+      </div>
+      <div class="checklist">
+        <div class="check-item reveal">
+          <div class="check-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div>
+            <h4>Flat-Rate Pricing</h4>
+            <p>The number we quote is the number you pay. No fuel fees, no stair charges, no surprises on move day.</p>
+          </div>
+        </div>
+        <div class="check-item reveal d1">
+          <div class="check-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div>
+            <h4>Our Crew, Not Temps</h4>
+            <p>Every person on your job is trained and vetted by us. You won't get a stranger from a day labor app.</p>
+          </div>
+        </div>
+        <div class="check-item reveal d2">
+          <div class="check-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div>
+            <h4>We Show Up on Time</h4>
+            <p>We give you a window and we hit it. If anything changes, you hear from us — not after the fact.</p>
+          </div>
+        </div>
+        <div class="check-item reveal d3">
+          <div class="check-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div>
+            <h4>Fully Licensed &amp; Insured</h4>
+            <p>Your belongings are covered from the moment we start to the moment we finish.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="sec">
+  <div class="eyebrow">What Clients Say</div>
+  <h2>Real people.<br>Real moves.</h2>
+  <p class="sub">Don't take our word for it.</p>
+  <div class="reviews-grid">
+    <div class="review-card reveal">
+      <div class="r-quote">"</div>
+      <div class="r-stars">
+        <svg class="r-star" viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg>
+        <svg class="r-star" viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg>
+        <svg class="r-star" viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg>
+        <svg class="r-star" viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg>
+        <svg class="r-star" viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg>
+      </div>
+      <p class="r-text">"Carbon Fiber Moving made our relocation seamless and stress-free. Their team was professional, efficient, and incredibly careful with all our belongings. Highly recommend!"</p>
+      <div class="r-divider"></div>
+      <div class="r-name">Sarah M.</div>
+      <div class="r-loc">Dallas, TX</div>
+    </div>
+    <div class="review-card reveal d1">
+      <div class="r-quote">"</div>
+      <div class="r-stars">
+        <svg class="r-star" viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg>
+        <svg class="r-star" viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg>
+        <svg class="r-star" viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg>
+        <svg class="r-star" viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg>
+        <svg class="r-star" viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg>
+      </div>
+      <p class="r-text">"They moved our entire office over a Saturday. Monday morning we were fully set up with zero downtime. Professional crew, fast, and not a single thing damaged."</p>
+      <div class="r-divider"></div>
+      <div class="r-name">Marcus T.</div>
+      <div class="r-loc">Plano, TX</div>
+    </div>
+    <div class="review-card reveal d2">
+      <div class="r-quote">"</div>
+      <div class="r-stars">
+        <svg class="r-star" viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg>
+        <svg class="r-star" viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg>
+        <svg class="r-star" viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg>
+        <svg class="r-star" viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg>
+        <svg class="r-star" viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg>
+      </div>
+      <p class="r-text">"Flat rate, on time, zero damage. I've used three moving companies over the years — Carbon Fiber is the only one I'd actually tell my friends to call."</p>
+      <div class="r-divider"></div>
+      <div class="r-name">Kevin S.</div>
+      <div class="r-loc">Frisco, TX</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section id="cta">
+  <div class="cta-ghost">Let's Move</div>
+  <div class="cta-inner">
+    <h2 class="light">Ready when you are.</h2>
+    <p>Get a free flat-rate quote today — no obligation, fast turnaround.</p>
+    <a href="#contact" class="btn-white">
+      Request a Quote
+      <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+    <a href="tel:+14696121436" class="btn-white-outline">Call (469) 612-1436</a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="sec">
+  <div class="contact-grid">
+    <div class="contact-info">
+      <div class="eyebrow">Get in Touch</div>
+      <h2>Get your free quote</h2>
+      <p class="sub">Fill this out and we'll get back to you with a flat-rate estimate — usually within a few hours. No obligation.</p>
+      <a href="tel:+14696121436" class="c-detail">
+        <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div>
+        (469) 612-1436
+      </a>
+      <div class="c-detail">
+        <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+        info@carbonfibermoving.com
+      </div>
+      <div class="c-detail">
+        <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        Dallas, TX &amp; surrounding areas
+      </div>
+    </div>
+    <div>
+      <form onsubmit="submitForm(event)">
+        <div class="form-row">
+          <input type="text" placeholder="First name" required>
+          <input type="text" placeholder="Last name" required>
+        </div>
+        <input type="email" placeholder="Email address" required>
+        <input type="tel" placeholder="Phone number">
+        <select id="svc" onchange="this.classList.add('has-val')" required>
+          <option value="" disabled selected>Service needed</option>
+          <option>Moving — Local</option>
+          <option>Moving — Long Distance</option>
+          <option>House Cleaning</option>
+          <option>Junk Removal</option>
+          <option>TV Mounting</option>
+          <option>Multiple Services</option>
+        </select>
+        <div class="form-row">
+          <input type="text" placeholder="Moving from (city)">
+          <input type="text" placeholder="Moving to (city)">
+        </div>
+        <input type="date">
+        <textarea placeholder="Anything else? Home size, # of rooms, special items…"></textarea>
+        <button type="submit" class="form-btn" id="fbtn">
+          Request Free Quote
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <a href="#" class="logo-img-link"><img src="images/logo.jpg" alt="Carbon Fiber Moving" class="nav-logo-img" style="height:50px;mix-blend-mode:multiply"></a>
+  <div class="ft-copy">© 2019 Carbon Fiber Moving · Dallas, TX</div>
+  <div class="ft-links">
+    <a href="#services">Services</a>
+    <a href="#why">Why Us</a>
+    <a href="#contact">Contact</a>
+  </div>
+</footer>
+
+<script>
+// Scroll reveal
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('up') });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+// Number counters
+const cObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if(!e.isIntersecting) return;
+    const el = e.target, target = parseInt(el.dataset.to);
+    let start = null;
+    const run = ts => {
+      if(!start) start = ts;
+      const prog = Math.min((ts - start) / 1000, 1);
+      el.textContent = Math.floor(prog * target);
+      if(prog < 1) requestAnimationFrame(run);
+      else el.textContent = target;
+    };
+    requestAnimationFrame(run);
+    cObs.unobserve(el);
+  });
+}, { threshold: 0.5 });
+document.querySelectorAll('.count').forEach(c => cObs.observe(c));
+
+// Form submit
+function submitForm(e) {
+  e.preventDefault();
+  const btn = document.getElementById('fbtn');
+  btn.innerHTML = '✓ Sent! We\'ll be in touch soon.';
+  btn.style.background = '#1a7a40';
+  btn.disabled = true;
+}
+
+// Nav highlight on scroll
+const sections = document.querySelectorAll('section[id]');
+const navAs = document.querySelectorAll('.nav-links a:not(.nav-pill)');
+window.addEventListener('scroll', () => {
+  const y = window.scrollY + 80;
+  sections.forEach(s => {
+    if(y >= s.offsetTop && y < s.offsetTop + s.offsetHeight) {
+      const id = s.id;
+      navAs.forEach(a => {
+        a.style.color = a.getAttribute('href') === '#'+id ? 'var(--red)' : '';
+      });
+    }
+  });
+}, { passive: true });
+</script>
+</body>
+</html>
