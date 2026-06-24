@@ -30,7 +30,7 @@ html{scroll-behavior:smooth}
 body{font-family:'Plus Jakarta Sans',sans-serif;color:var(--text);background:var(--white);-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img{display:block;width:100%;height:100%;object-fit:cover}
 
-/* ── NAV ── */
+/* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:300;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 5%;background:rgba(255,255,255,0.96);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
 .logo{font-size:17px;font-weight:800;color:var(--text);text-decoration:none;letter-spacing:-0.02em}
 .logo span{color:var(--red)}
@@ -45,14 +45,14 @@ nav{position:fixed;top:0;left:0;right:0;z-index:300;height:68px;display:flex;ali
 .nav-pill:hover{background:var(--red-dark)!important}
 @media(max-width:768px){.nav-links{display:none}}
 
-/* ── TICKER ── */
+/* TICKER */
 .ticker-wrap{background:var(--red);overflow:hidden;height:38px;display:flex;align-items:center;margin-top:68px}
 .ticker-track{display:flex;white-space:nowrap;animation:tick 28s linear infinite}
 .tick-item{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,0.9);padding:0 28px}
 .tick-sep{color:rgba(255,255,255,0.35);padding:0 4px;font-size:11px}
 @keyframes tick{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
-/* ── HERO ── */
+/* HERO */
 #hero{display:grid;grid-template-columns:1fr 1fr;min-height:calc(100vh - 106px);background:var(--white)}
 .hero-left{display:flex;flex-direction:column;justify-content:center;padding:72px 5% 72px 6%;position:relative}
 .hero-left::after{content:'';position:absolute;right:0;top:15%;bottom:15%;width:1px;background:var(--border)}
@@ -71,11 +71,9 @@ h1 em{font-style:normal;color:var(--red)}
 .btn-outline{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--text);font-size:15px;font-weight:600;padding:14px 26px;border-radius:100px;text-decoration:none;border:1.5px solid var(--border);transition:border-color .2s,transform .15s}
 .btn-outline:hover{border-color:#aaa;transform:translateY(-1px)}
 .hero-stats{display:flex;gap:36px}
-.stat-item{}
 .stat-n{font-size:36px;font-weight:800;color:var(--text);letter-spacing:-0.03em;line-height:1}
 .stat-n span{color:var(--red)}
 .stat-l{font-size:12px;color:var(--text3);font-weight:500;margin-top:3px;text-transform:uppercase;letter-spacing:.05em}
-
 .hero-right{position:relative;overflow:hidden;background:linear-gradient(135deg,#1c1c1c 0%,#2e2020 100%)}
 .hero-img-wrap{position:absolute;inset:0}
 .hero-img-wrap img{object-position:center}
@@ -85,18 +83,16 @@ h1 em{font-style:normal;color:var(--red)}
 .hero-tag-star{width:13px;height:13px;fill:#F5A623}
 .hero-tag-text{font-size:13px;font-weight:700;color:var(--text)}
 .hero-tag-sub{font-size:11px;color:var(--text3);margin-top:1px}
-
 @media(max-width:900px){
   #hero{grid-template-columns:1fr;min-height:auto}
   .hero-right{height:300px;order:-1}
   .hero-left{padding:40px 5%;text-align:center}
   .hero-left::after{display:none}
-  .hero-badge,.hero-btns,.hero-stats{margin-left:auto;margin-right:auto}
   .hero-btns,.hero-stats{justify-content:center}
   .hero-sub{margin:0 auto 36px}
 }
 
-/* ── SHARED SECTION ── */
+/* SHARED SECTION */
 .sec{padding:96px 6%}
 .sec-alt{background:var(--off)}
 .sec-gray{background:var(--gray)}
@@ -108,7 +104,7 @@ h2.light{color:#fff}
 .sub{font-size:17px;color:var(--text2);line-height:1.75;max-width:480px;margin-bottom:56px}
 .sub.light{color:rgba(255,255,255,.75)}
 
-/* ── SERVICES ── */
+/* SERVICES */
 .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:24px}
 .svc-card{background:var(--white);border-radius:16px;overflow:hidden;box-shadow:var(--shadow-sm);transition:transform .25s,box-shadow .25s;cursor:default}
 .svc-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
@@ -124,7 +120,7 @@ h2.light{color:#fff}
 .svc-link:hover{gap:10px}
 .svc-link svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:2.5}
 
-/* ── PROCESS ── */
+/* PROCESS */
 .process-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0;position:relative}
 .process-row::after{content:'';position:absolute;top:30px;left:12%;right:12%;height:1px;background:var(--border);z-index:0}
 .process-step{text-align:center;padding:0 24px;position:relative;z-index:1}
@@ -134,7 +130,7 @@ h2.light{color:#fff}
 .process-step h3{font-size:16px;font-weight:700;color:var(--text);margin-bottom:8px}
 .process-step p{font-size:14px;color:var(--text2);line-height:1.65}
 
-/* ── WHY US ── */
+/* WHY US */
 .why-layout{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
 @media(max-width:900px){.why-layout{grid-template-columns:1fr;gap:48px}}
 .trust-band{display:flex;gap:40px;flex-wrap:wrap;margin-bottom:40px}
@@ -142,12 +138,10 @@ h2.light{color:#fff}
 .trust-n sup{font-size:22px;color:var(--red);vertical-align:super}
 .trust-lbl{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--text3);margin-top:4px}
 .trust-div{width:1px;background:var(--border);align-self:stretch;margin:4px 0}
-
 .why-right-photo{border-radius:20px;overflow:hidden;height:380px;margin-bottom:24px;position:relative;background:linear-gradient(135deg,#1a1a1a 0%,#2a1a1a 100%)}
 .why-badge{position:absolute;bottom:20px;right:20px;background:#fff;border-radius:10px;padding:14px 18px;box-shadow:var(--shadow-md)}
 .why-badge-top{font-size:13px;font-weight:800;color:var(--text);margin-bottom:2px}
 .why-badge-sub{font-size:12px;color:var(--text3)}
-
 .checklist{display:flex;flex-direction:column;gap:0}
 .check-item{display:flex;align-items:flex-start;gap:14px;padding:20px 0;border-bottom:1px solid var(--border)}
 .check-item:last-child{border-bottom:none}
@@ -156,7 +150,7 @@ h2.light{color:#fff}
 .check-item h4{font-size:15px;font-weight:700;color:var(--text);margin-bottom:3px}
 .check-item p{font-size:14px;color:var(--text2);line-height:1.6}
 
-/* ── REVIEWS ── */
+/* REVIEWS */
 .reviews-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
 .review-card{background:var(--white);border-radius:16px;padding:32px;box-shadow:var(--shadow-sm);transition:transform .2s,box-shadow .2s;position:relative}
 .review-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md)}
@@ -168,7 +162,7 @@ h2.light{color:#fff}
 .r-loc{font-size:12px;color:var(--text3);margin-top:2px}
 .r-quote{position:absolute;top:24px;right:24px;font-size:64px;font-weight:800;color:rgba(204,26,40,0.07);line-height:1;font-family:Georgia,serif;pointer-events:none}
 
-/* ── CTA BANNER ── */
+/* CTA BANNER */
 #cta{padding:100px 6%;background:var(--red);position:relative;overflow:hidden;text-align:center}
 .cta-ghost{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:clamp(60px,12vw,140px);font-weight:800;color:rgba(255,255,255,0.06);text-transform:uppercase;letter-spacing:0.04em;white-space:nowrap;pointer-events:none;user-select:none}
 .cta-inner{position:relative;z-index:1;max-width:600px;margin:0 auto}
@@ -181,7 +175,25 @@ h2.light{color:#fff}
 .btn-white-outline{display:inline-flex;align-items:center;gap:8px;background:transparent;color:#fff;font-size:15px;font-weight:600;padding:15px 28px;border-radius:100px;text-decoration:none;border:1.5px solid rgba(255,255,255,.4);transition:border-color .2s,transform .15s;margin:0 8px}
 .btn-white-outline:hover{border-color:#fff;transform:translateY(-1px)}
 
-/* ── CONTACT ── */
+/* SERVICE AREAS */
+#areas{padding:96px 6%;background:var(--off)}
+.areas-layout{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+@media(max-width:900px){.areas-layout{grid-template-columns:1fr;gap:48px}}
+.areas-map{border-radius:16px;overflow:hidden;height:380px;box-shadow:var(--shadow-md)}
+.areas-map iframe{width:100%;height:100%;border:0}
+.areas-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:36px}
+.area-pill{background:var(--white);border:1px solid var(--border);border-radius:100px;padding:10px 18px;font-size:14px;font-weight:600;color:var(--text2);text-align:center}
+
+/* HOURS */
+.hours-block{background:var(--white);border-radius:16px;padding:28px 32px;box-shadow:var(--shadow-sm);margin-top:32px}
+.hours-block h4{font-size:15px;font-weight:800;color:var(--text);margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.hours-block h4 svg{width:16px;height:16px;stroke:var(--red);fill:none;stroke-width:2}
+.hours-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border);font-size:14px}
+.hours-row:last-child{border-bottom:none}
+.hours-day{color:var(--text2);font-weight:500}
+.hours-time{color:var(--text);font-weight:700}
+
+/* CONTACT */
 .contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:80px;align-items:start}
 @media(max-width:900px){.contact-grid{grid-template-columns:1fr;gap:48px}}
 .contact-info h2{margin-bottom:10px}
@@ -190,7 +202,6 @@ h2.light{color:#fff}
 .c-detail:hover{color:var(--text)}
 .c-icon{width:40px;height:40px;min-width:40px;border-radius:10px;background:var(--red-xlight);display:flex;align-items:center;justify-content:center}
 .c-icon svg{width:17px;height:17px;stroke:var(--red);fill:none;stroke-width:1.8}
-
 form{display:flex;flex-direction:column;gap:14px}
 form input,form select,form textarea{width:100%;font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;color:var(--text);background:var(--white);border:1.5px solid var(--border);border-radius:10px;padding:13px 16px;outline:none;transition:border-color .2s;-webkit-appearance:none}
 form input::placeholder,form textarea::placeholder{color:var(--text3)}
@@ -205,7 +216,7 @@ form textarea{resize:vertical;min-height:100px}
 .form-btn:hover{background:var(--red-dark);transform:translateY(-1px)}
 .form-btn svg{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:2.5}
 
-/* ── FOOTER ── */
+/* FOOTER */
 footer{background:var(--off);border-top:1px solid var(--border);padding:32px 6%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px}
 .ft-logo{font-size:15px;font-weight:800;color:var(--text);letter-spacing:-.02em}
 .ft-logo span{color:var(--red)}
@@ -214,7 +225,7 @@ footer{background:var(--off);border-top:1px solid var(--border);padding:32px 6%;
 .ft-links a:hover{color:var(--text)}
 .ft-copy{font-size:13px;color:var(--text3)}
 
-/* ── REVEAL ── */
+/* REVEAL */
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .55s ease,transform .55s ease}
 .reveal.up{opacity:1;transform:translateY(0)}
 .d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}
@@ -229,6 +240,7 @@ footer{background:var(--off);border-top:1px solid var(--border);padding:32px 6%;
     <li><a href="#services">Services</a></li>
     <li><a href="#why">Why Us</a></li>
     <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#areas">Service Areas</a></li>
     <li><a href="#contact" class="nav-pill">Free Quote</a></li>
   </ul>
 </nav>
@@ -306,10 +318,9 @@ footer{background:var(--off);border-top:1px solid var(--border);padding:32px 6%;
   <h2>One crew.<br>Everything handled.</h2>
   <p class="sub">We do it all — so you only have to make one call.</p>
   <div class="services-grid">
-
     <div class="svc-card reveal">
       <div class="svc-photo">
-        <img src="images/moving.jpg" alt="Carbon Fiber Moving crew" style="object-position:center center" style="object-position:center center">
+        <img src="images/moving.jpg" alt="Carbon Fiber Moving crew" style="object-position:center center">
         <div class="svc-photo-overlay"></div>
         <div class="svc-num">Moving</div>
       </div>
@@ -319,7 +330,6 @@ footer{background:var(--off);border-top:1px solid var(--border);padding:32px 6%;
         <a href="#contact" class="svc-link">Book a move <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
       </div>
     </div>
-
     <div class="svc-card reveal d1">
       <div class="svc-photo">
         <img src="images/cleaning.jpg" alt="Move-in ready home" style="object-position:center 40%">
@@ -332,7 +342,6 @@ footer{background:var(--off);border-top:1px solid var(--border);padding:32px 6%;
         <a href="#contact" class="svc-link">Schedule a clean <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
       </div>
     </div>
-
     <div class="svc-card reveal d2">
       <div class="svc-photo">
         <img src="images/packed.jpg" alt="Packed moving truck" style="object-position:center 20%">
@@ -345,7 +354,6 @@ footer{background:var(--off);border-top:1px solid var(--border);padding:32px 6%;
         <a href="#contact" class="svc-link">Clear it out <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
       </div>
     </div>
-
     <div class="svc-card reveal d3">
       <div class="svc-photo">
         <img src="images/truck.jpg" alt="Carbon Fiber Moving truck" style="object-position:center 40%">
@@ -358,7 +366,6 @@ footer{background:var(--off);border-top:1px solid var(--border);padding:32px 6%;
         <a href="#contact" class="svc-link">Get it mounted <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
       </div>
     </div>
-
   </div>
 </section>
 
@@ -528,6 +535,51 @@ footer{background:var(--off);border-top:1px solid var(--border);padding:32px 6%;
   </div>
 </section>
 
+<!-- SERVICE AREAS -->
+<section id="areas">
+  <div class="areas-layout">
+    <div>
+      <div class="eyebrow">Service Areas</div>
+      <h2>We come to you.</h2>
+      <p class="sub" style="margin-bottom:32px">Proudly serving Dallas and the surrounding communities. If you're in the DFW area, we've got you covered.</p>
+      <div class="areas-list">
+        <div class="area-pill">Dallas</div>
+        <div class="area-pill">Plano</div>
+        <div class="area-pill">Frisco</div>
+        <div class="area-pill">Irving</div>
+        <div class="area-pill">McKinney</div>
+        <div class="area-pill">Garland</div>
+        <div class="area-pill">Arlington</div>
+        <div class="area-pill">Allen</div>
+        <div class="area-pill">Richardson</div>
+        <div class="area-pill">Mesquite</div>
+      </div>
+      <div class="hours-block">
+        <h4>
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Opening Hours
+        </h4>
+        <div class="hours-row">
+          <span class="hours-day">Monday – Saturday</span>
+          <span class="hours-time">8:00 AM – 7:00 PM</span>
+        </div>
+        <div class="hours-row">
+          <span class="hours-day">Sunday</span>
+          <span class="hours-time">9:00 AM – 5:00 PM</span>
+        </div>
+      </div>
+    </div>
+    <div class="areas-map reveal">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d429110.35989773955!2d-97.21976!3d32.794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c19f77b45974b%3A0xb9ec9ba4f647678f!2sDallas%2C%20TX!5e0!3m2!1sen!2sus!4v1680000000000"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
 <!-- CONTACT -->
 <section id="contact" class="sec">
   <div class="contact-grid">
@@ -539,10 +591,10 @@ footer{background:var(--off);border-top:1px solid var(--border);padding:32px 6%;
         <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div>
         (469) 612-1436
       </a>
-      <div class="c-detail">
+      <a href="mailto:carbonfibermoving@gmail.com" class="c-detail">
         <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
-        info@carbonfibermoving.com
-      </div>
+        carbonfibermoving@gmail.com
+      </a>
       <div class="c-detail">
         <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
         Dallas, TX &amp; surrounding areas
@@ -587,18 +639,17 @@ footer{background:var(--off);border-top:1px solid var(--border);padding:32px 6%;
   <div class="ft-links">
     <a href="#services">Services</a>
     <a href="#why">Why Us</a>
+    <a href="#areas">Service Areas</a>
     <a href="#contact">Contact</a>
   </div>
 </footer>
 
 <script>
-// Scroll reveal
 const obs = new IntersectionObserver(entries => {
   entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('up') });
 }, { threshold: 0.1 });
 document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 
-// Number counters
 const cObs = new IntersectionObserver(entries => {
   entries.forEach(e => {
     if(!e.isIntersecting) return;
@@ -617,7 +668,6 @@ const cObs = new IntersectionObserver(entries => {
 }, { threshold: 0.5 });
 document.querySelectorAll('.count').forEach(c => cObs.observe(c));
 
-// Form submit
 function submitForm(e) {
   e.preventDefault();
   const btn = document.getElementById('fbtn');
@@ -626,7 +676,6 @@ function submitForm(e) {
   btn.disabled = true;
 }
 
-// Nav highlight on scroll
 const sections = document.querySelectorAll('section[id]');
 const navAs = document.querySelectorAll('.nav-links a:not(.nav-pill)');
 window.addEventListener('scroll', () => {
